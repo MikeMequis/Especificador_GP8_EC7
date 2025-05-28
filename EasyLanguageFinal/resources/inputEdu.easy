@@ -1,0 +1,13 @@
+algoritmo "exemplo"
+var
+  inteiro x, y
+  real media
+inicio
+  leia(x, y)
+  media := (x + y) / 2
+  se media >= 7 entao
+    escreval("Aprovado")
+  senao
+    escreval("Reprovado")
+  fimse
+fimalgoritmo
