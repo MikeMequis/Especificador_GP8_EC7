@@ -2,20 +2,6 @@
 
 package br.edu.cefsa.compiler.parser;
 
-import br.edu.cefsa.compiler.datastructures.EasySymbol;
-import br.edu.cefsa.compiler.datastructures.EasyVariable;
-import br.edu.cefsa.compiler.datastructures.EasySymbolTable;
-import br.edu.cefsa.compiler.exceptions.EasySemanticException;
-import br.edu.cefsa.compiler.abstractsyntaxtree.EasyProgram;
-import br.edu.cefsa.compiler.abstractsyntaxtree.AbstractCommand;
-import br.edu.cefsa.compiler.abstractsyntaxtree.CommandLeitura;
-import br.edu.cefsa.compiler.abstractsyntaxtree.CommandEscrita;
-import br.edu.cefsa.compiler.abstractsyntaxtree.CommandAtribuicao;
-import br.edu.cefsa.compiler.abstractsyntaxtree.CommandDecisao;
-import br.edu.cefsa.compiler.abstractsyntaxtree.CommandRepeticao;
-import java.util.ArrayList;
-import java.util.Stack;
-
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**

@@ -103,7 +103,6 @@ public class EasySemanticAnalyzer {
 
     // Expression Validation and Type Checking
     public void validateExpression(String id) {
-        EasyVariable var = resolveVariable(id);
         if (!isInitialized(id)) {
             throwError("Variable '" + id + "' may not have been initialized");
         }

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EasyLanguageIdeApplication<especificador_gp8_ec7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fesa.gp8.especificador_gp8_ec7.EasyLanguageIdeApplication",
+            "projectName": "especificador_gp8_ec7",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
