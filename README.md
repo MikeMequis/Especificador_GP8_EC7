@@ -1,6 +1,6 @@
 # IDE Online EasyLanguage
 
-Uma IDE web para a linguagem educacional EasyLanguage, desenvolvida como parte do projeto da disciplina EC7 no Centro Universitário FESA.
+Uma IDE web para a linguagem educacional EasyLanguage.
 
 ## 📋 Sobre o Projeto
 
@@ -13,21 +13,19 @@ Este projeto implementa uma IDE online para a linguagem EasyLanguage, uma lingua
 - Visualização da árvore sintática
 - Interface web moderna e responsiva
 - Exemplos de código prontos para uso
-- Suporte completo à sintaxe EasyLanguage
 - Interface totalmente em português
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Backend:**
-  - Spring Boot 3.5.0
-  - ANTLR4 4.12.0
+  - Spring Boot
+  - ANTLR4
   - Java 17
   - Maven
 
 - **Frontend:**
   - Thymeleaf
-  - Bootstrap 5
-  - CodeMirror (editor de código)
+  - Spring Boot
   - JavaScript
 
 ## 📦 Estrutura do Projeto
@@ -84,9 +82,8 @@ EasyLanguageFinal/
 ## 🚀 Como Executar
 
 ### Pré-requisitos
-- Java JDK 17 ou superior
-- Maven 3.6 ou superior
-- Git
+- Java JDK 17
+- Maven
 
 ### Passos para Execução
 
@@ -125,19 +122,15 @@ A IDE inclui vários exemplos prontos para uso:
 ### Editor de Código
 - Destaque de sintaxe personalizado
 - Numeração de linhas
-- Indentação automática
-- Tema escuro para melhor visualização
 
 ### Compilador
 - Análise sintática em tempo real
 - Mensagens de erro detalhadas
 - Visualização da árvore sintática
-- Feedback imediato
 
 ### Interface
 - Design responsivo
 - Seleção de exemplos
-- Área de saída separada
 - Visualização da árvore sintática
 
 ## 🧪 Testes
@@ -287,44 +280,11 @@ op_multiplicativo → '*' | '/' | 'e'
    - Concatenação: permitida com `literal`
 
 4. **Compatibilidade de Tipos**
-```
-+----------------+----------+--------+---------+--------+
-| Operação       | inteiro  | real   | literal | logico |
-+----------------+----------+--------+---------+--------+
-| +, -, *, /     |    ✓     |   ✓    |    ✗    |   ✗    |
-| >, <, >=, <=   |    ✓     |   ✓    |    ✗    |   ✗    |
-| =, <>          |    ✓     |   ✓    |    ✓    |   ✓    |
-| e, ou          |    ✗     |   ✗    |    ✗    |   ✓    |
-| nao            |    ✗     |   ✗    |    ✗    |   ✓    |
-+----------------+----------+--------+---------+--------+
-```
 
-### Exemplos de Uso
-
-#### 1. Expressões Aritméticas
-```
-algoritmo "calculos"
-var
-    inteiro a, b, soma
-    real divisao
-inicio
-    a = 10
-    b = 5
-    soma = a + b          // Resultado: 15
-    divisao = a / b       // Resultado: 2.0
-fimalgoritmo
-```
-
-#### 2. Expressões Lógicas
-```
-algoritmo "logica"
-var
-    logico x, y, resultado
-inicio
-    x = verdadeiro
-    y = falso
-    resultado = x e y     // Resultado: falso
-    resultado = x ou y    // Resultado: verdadeiro
-    resultado = nao x     // Resultado: falso
-fimalgoritmo
-```
+| Operação       | inteiro | real | literal | lógico |
+|----------------|---------|------|---------|--------|
+| +, -, *, /     |    ✓    |  ✓   |    ✗    |   ✗    |
+| >, <, >=, <=   |    ✓    |  ✓   |    ✗    |   ✗    |
+| =, <>          |    ✓    |  ✓   |    ✓    |   ✓    |
+| e, ou          |    ✗    |  ✗   |    ✗    |   ✓    |
+| não            |    ✗    |  ✗   |    ✗    |   ✓    |
